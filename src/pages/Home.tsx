@@ -18,7 +18,7 @@ export function Home() {
 
         <Link
           to="/events"
-          className="p-5 text-2xl bg-[#020F1F] text-white rounded-lg mt-3 flex items-center justify-center"
+          className="p-5  text-2xl sm:leading-none bg-[#020F1F] text-white rounded-lg mt-3 flex items-center justify-center"
         >
           See Events
           <span className="m-0 p-0 inline-block ">
