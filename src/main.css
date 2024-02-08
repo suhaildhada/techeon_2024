@@ -1,0 +1,30 @@
+.hero-bg-height {
+  height: 1000px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bg-img {
+  background-image: url("./assets/website-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0);
+}
+
+.poster {
+  border: 5px solid #000;
+}
