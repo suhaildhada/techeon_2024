@@ -1,18 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "@mantine/core/styles.css";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import "./main.css";
-import { MantineProvider } from "@mantine/core";
+import { Root } from "./pages/Root.tsx";
+import { Events } from "./pages/Events.tsx";
+import { Home } from "./pages/Home.tsx";
+
+const BrowserRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+
+    children: [
+      { path: "/events", element: <Events /> },
+      { path: "/", element: <Home /> },
+    ],
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <MantineProvider
-      withCssVariables
-      theme={{
-        primaryColor: "orange",
-      }}
-    >
-      <App />
-    </MantineProvider>
+    <RouterProvider router={BrowserRouter} />
+    {/* <App /> */}
   </React.StrictMode>
 );
