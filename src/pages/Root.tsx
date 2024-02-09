@@ -6,7 +6,7 @@ export function Root() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="bg-img">
         <Outlet />
       </div>
       <Footer />

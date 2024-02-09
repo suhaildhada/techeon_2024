@@ -4,7 +4,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 export function Home() {
   return (
-    <div className="h-full w-full flex bg-img">
+    <div className="h-full w-full flex">
       <div className="flex flex-col justify-center items-center w-full p-10 md:p-24">
         <div>
           <img src={CBIT_LOGO} alt="CBIT Logo" className="w-[500px]" />
