@@ -17,7 +17,7 @@ export function Home() {
           />
         </div>
         <div className="flex justify-center items-center flex-col bg-black/60 rounded-lg pb-3 px-3 border border-white">
-          <h1 className="text-xl md:text-3xl md:text-4xl font-bold p-2 text-white ">
+          <h1 className="text-xl sm:text-3xl font-bold p-2 text-white ">
             Techeon 2024
           </h1>
           <p className="text-md md:text-2xl font-medium text-white">
