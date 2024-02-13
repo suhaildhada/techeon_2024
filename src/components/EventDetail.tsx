@@ -60,11 +60,11 @@ export function EventDetail() {
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               Team of 2: {amount?.group.teamsOfTwo}₹ <br />
               {amount?.group.teamsOfThree &&
-                "Team of 3: " + amount?.group.teamsOfThree + "₹"}
-              <br />
+                `Team of 3: ${amount?.group?.teamsOfThree}₹`}
+              {amount?.group.teamsOfThree && <br />}
               {amount?.group.teamsOfFour &&
-                "Team of 4: " + amount?.group.teamsOfFour + "₹"}
-              <br />
+                `Team of 4: ${amount?.group?.teamsOfFour}₹`}
+              {amount?.group.teamsOfFour && <br />}
             </p>
           )}
 
