@@ -16,9 +16,15 @@ import {
   TREASURE_HUNT_DESCRIPTION,
 } from "./eventDescription";
 
+interface Group {
+  teamsOfTwo: number;
+  teamsOfThree?: number;
+  teamsOfFour?: number;
+}
+
 interface Amount {
   single: number;
-  group?: number;
+  group?: Group;
 }
 interface CardInfo {
   title: string;
@@ -34,7 +40,9 @@ interface CardInfo {
 
 const generalAmount: Amount = {
   single: 50,
-  group: 100,
+  group: {
+    teamsOfTwo: 100,
+  },
 };
 
 export const cardInfo: CardInfo[] = [
@@ -61,7 +69,14 @@ export const cardInfo: CardInfo[] = [
       "Bhavana - 8106127971",
       "Maimona - 7995620324",
     ],
-    amount: generalAmount,
+    amount: {
+      single: 50,
+      group: {
+        teamsOfTwo: 100,
+        teamsOfThree: 150,
+        teamsOfFour: 200,
+      },
+    },
     googleFormLink: "https://forms.gle/eSET8GvSSR8vqy4H9",
   },
   {
@@ -71,7 +86,14 @@ export const cardInfo: CardInfo[] = [
     link: "/events/lan-gaming",
     facultyCoordinator: "Mr. P. Krishna Prasad - 9701804086",
     studentCoordinators: ["V. Akash - 6281236582", "K Raghu Teja - 8333855466"],
-    amount: generalAmount,
+    amount: {
+      single: 50,
+      group: {
+        teamsOfTwo: 100,
+        teamsOfThree: 150,
+        teamsOfFour: 200,
+      },
+    },
     googleFormLink: "https://forms.gle/bCYaujTTfSME4tuG6",
   },
   {
@@ -111,7 +133,9 @@ export const cardInfo: CardInfo[] = [
     ],
     amount: {
       single: 50,
-      group: 150,
+      group: {
+        teamsOfTwo: 150,
+      },
     },
     googleFormLink: "https://forms.gle/Z5i4SrUzNkjSkfN86",
   },
