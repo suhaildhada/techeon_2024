@@ -7,6 +7,8 @@ import SCRIBBLE_WORD from "../assets/posters/scribble-word.png";
 import SOUND_ENGINEERING from "../assets/posters/sound-engineer.png";
 import TECH_QUIZ from "../assets/posters/tech-quiz.png";
 import TREASURE_HUNT from "../assets/posters/treasure-hunt.png";
+import POSTER_PRESENTATION from "../assets/posters/poster-design.png";
+
 import {
   DUMB_CHARADES_DESCRIPTION,
   MEMORY_VS_TIME_DESCRIPTION,
@@ -171,8 +173,8 @@ export const cardInfo: CardInfo[] = [
   },
   {
     title: "Poster Presentation",
-    description: `Poster Presentation is a process of presenting a topic to an audience. It is a way of showing the audience what you have done and what you have discovered. It is a way of sharing your knowledge and findings with others.`,
-    image: PAPER_PRESENTATION,
+    description: `Propose an Innovative Idea along with the design of the poster in order to solve any societal problems or need based problems.`,
+    image: POSTER_PRESENTATION,
     link: "/events/poster-presentation",
     facultyCoordinator: "Mr. Ramesh Ponnala - 9985145690",
     studentCoordinators: [
