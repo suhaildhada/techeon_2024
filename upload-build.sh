@@ -1,0 +1,1 @@
+rsync -av -e ssh  ./dist ec2:~/techeon2024
