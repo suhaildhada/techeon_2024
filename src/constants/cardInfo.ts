@@ -118,7 +118,7 @@ export const cardInfo: CardInfo[] = [
     facultyCoordinator: "Mr. Ramesh Ponnala - 9985145690",
     studentCoordinators: ["C. Vani - 8978792775", "J. Keerthi - 8688084402"],
     amount: {
-      single: 400,
+      single: 200,
     },
     googleFormLink: "https://forms.gle/X86VnPgjq8ZPK4eDA",
   },
@@ -182,7 +182,7 @@ export const cardInfo: CardInfo[] = [
       "B. Nikhitha - 7997452166",
     ],
     amount: {
-      single: 400,
+      single: 200,
     },
     googleFormLink: "https://forms.gle/BZnghxn8ucZw8xss5",
   },
